@@ -1,0 +1,21 @@
+---
+title: Home
+layout: default
+---
+
+<div class="row justify-content-center align-items-center my-5">
+  <div class="col-sm-auto">
+		<h1 id="greeting">Hello there!</h1>
+		<h2>I'm Joss Wang</h2>
+	</div>
+</div>
+<div class="row justify-content-center align-items-center my-5">
+	<div class="col-sm-6 col-10">
+		I'm a third-year Mechatronic Systems Engineering student at the University of Western Ontario. 
+	</div>
+</div>
+
+<script>
+	const h = (new Date()).getHours()
+	document.querySelector('#greeting').innerHTML = (h < 12) ? 'Good morning!' : (h < 17) ? 'Good afternoon!' : (h < 22) ? 'Good evening!' : 'Hello there!'
+</script>
